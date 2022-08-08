@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <link rel="icon" type="png" href="/images/The Church Member's Journey.png">
+            <link href="/css/styles.css" rel="stylesheet" type="text/css" />
+            {{ $title := site.Title }}
+            {{ if not .IsHome }}
+                {{ $title = printf "%s | %s" .Title site.Title }}
+            {{ end }}
+            <title>{{ $title }}</title>
+            <script src="/script/script.js" defer></script>
+            <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+  if (window.netlifyIdentity) {
+    window.netlifyIdentity.on("init", user => {
+      if (!user) {
+        window.netlifyIdentity.on("login", () => {
+          document.location.href = "/admin/";
+        });
+      }
+    });
+  }
+</script>
+        </head>
+
+        <body>
+            <!-- Navbar and Logo Section -->
+            <header>
+                <nav class="navbar">
+                  <div>
+                        <a href="#" class="toggle-button">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-links">
+                        <ul>
+                            <li class="navbar-links1"><a href="/">Home</a></li>
+                            <li class="navbar-links1"><a href="/about">About</a></li>
+                            <li class="navbar-links1"><a href="/get_started">Get Started</a></li>
+                            <li class="navbar-links2"><a href="/contact_us">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="/"><img  class="navbar-logo" src="/images/The Church Member's Journey2.png" alt="logo"></a>
+                        <div class="navbar-logo2">
+                            <a href="/"><img src="/images/The Church Member's Journey.png" alt="logo"></a>
+                        </div>
+                    </div>
+                    <div></div>
+                </nav>
+            </header>
+            <main>
+                {{ block "main" . }}{{ end }}
+            </main>
+            <!-- Footer -->
+            <footer>
+                <div></div>
+                <p>© 2022. All rights reserved by The Church Member's Journey</p>
+                <div>
+                  <p><div><a href="/privacy_policy">Privacy Policy</a></div> <a href="/terms_of_service">Terms & Conditions</a></p>
+                </div>
+                <div></div>
+            </footer> 
+        </body>
+    </html>

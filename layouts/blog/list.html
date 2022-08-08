@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main class="pages-main">
+  <h1 class="pages-h1"><u>Resources</u></h1>
+  {{ range (.Site.GetPage "section" "blog").Pages }}
+    <div class="post-preview">
+      <img class="post-preview__left" src="{{ .Params.image }}">
+      <div class="post-preview__right">
+        <a class="preview-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        <span>{{ .Date.Format "January 2, 2006" }}</span>
+      </div>
+    </div>
+
+  {{ end }}
+</main>
+{{ end }}

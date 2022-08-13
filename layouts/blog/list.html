@@ -3,7 +3,7 @@
   <h1 class="pages-h1"><u>Resources</u></h1>
   {{ range (.Site.GetPage "section" "blog").Pages }}
     <div>
-      <a href="{{.Permalink}}"><img src="{{ .Params.image }}" style="max-width: 640px; height: auto; padding-top: 1rem; padding-bottom: 1rem;"></a>
+      <a href="{{.Permalink}}"><img src="{{ .Params.image }}" style="width: 640px; height: auto; max-width: 100%; padding-top: 1rem; padding-bottom: 1rem;"></a>
       <div>
         <a href="{{ .Permalink }}" style="text-decoration: none; color: black; font-size: xx-large;"><strong>{{ .Title }}</strong></a>
         <div style="padding-top: 0.5rem; font-size: x-large;">{{ .Date.Format "January 2, 2006" }}</div>

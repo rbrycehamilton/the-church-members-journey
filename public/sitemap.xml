@@ -2,14 +2,8 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://thechurchmembersjourney.com/blog/endangered-gulls/</loc>
-    <lastmod>2022-08-06T00:01:54-04:00</lastmod>
-  </url><url>
     <loc>https://thechurchmembersjourney.com/blog/bird-of-the-year/</loc>
     <lastmod>2022-08-06T00:01:47-04:00</lastmod>
-  </url><url>
-    <loc>https://thechurchmembersjourney.com/blog/first-post/</loc>
-    <lastmod>2022-08-06T00:01:36-04:00</lastmod>
   </url><url>
     <loc>https://thechurchmembersjourney.com/blog/</loc>
     <lastmod>2022-08-06T00:01:19-04:00</lastmod>
@@ -31,5 +25,9 @@
   </url><url>
     <loc>https://thechurchmembersjourney.com/</loc>
     <lastmod>2022-08-05T17:10:26-04:00</lastmod>
+  </url><url>
+    <loc>https://thechurchmembersjourney.com/categories/</loc>
+  </url><url>
+    <loc>https://thechurchmembersjourney.com/tags/</loc>
   </url>
 </urlset>

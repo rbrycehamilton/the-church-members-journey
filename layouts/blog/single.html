@@ -1,14 +1,18 @@
 {{ define "main" }}
-  <div class="b-hero">
-    <img class="b-hero__image" src="{{ .Params.image }}">
-    <div class="b-hero__info">
-      <h1 class="b-hero__title">{{ .Title }}</h1>
-      <div class="b-hero__author-date">
-        <span>Written by: {{ .Params.author }}</span>
-        <span>{{ .Date.Format "January 2, 2006" }}</span>
-        <!-- Tag navigation can be added later -->
+<main class="pages-main">
+    <img src="{{ .Params.image }}" style="max-width: 640px; height: auto; padding-top: 1rem; padding-bottom: 1rem;">
+    <div>
+      <h1 class="pages-h1">{{ .Title }}</h1>
+      <div>
+        <div style="padding-top: 0.35rem; font-size: x-large;">Author: {{ .Params.author }}</div>
+        <div style="padding-top: 0.5rem; font-size: x-large;">{{ .Date.Format "January 2, 2006" }}</div>
+      </div>
+      <div style="padding-top: 1rem;">
+        <div style="font-size: x-large;">{{ if .Params.tags }}Tags: {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="text-decoration: none; color: black; font-size: x-large;"><strong>{{ . }}</strong></a> {{end}}{{end}}</div>
+        <div style="font-size: x-large;">{{ if .Params.categories }}Categories: {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" style="text-decoration: none; color: black; font-size: x-large;"><strong>{{ . }}</strong></a> {{end}}{{end}}</div>
       </div>
     </div>
   </div>
-  {{ .Content }}
+  <div style="padding-top: 2rem; text-align: justify; font-size: x-large;" class="paragraph">{{ .Content }}</div>
+</main>
 {{ end }}

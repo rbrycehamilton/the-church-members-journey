@@ -1,0 +1,15 @@
+{{ define "main" }}
+<main class="pages-main">
+  <h1 class="pages-h1"><u>All posts for {{ .Type | singularize }} "{{ .Title }}"</u></h1>
+    {{ range .Data.Pages }}
+    <div>
+        <a href="{{.Permalink}}"><img src="{{ .Params.image }}" style="max-width: 640px; height: auto; padding-top: 1rem; padding-bottom: 1rem;"></a>
+        <div>
+          <a href="{{ .Permalink }}" style="text-decoration: none; color: black; font-size: xx-large;"><strong>{{ .Title }}</strong></a>
+          <div style="padding-top: 0.5rem; font-size: x-large;">{{ .Date.Format "January 2, 2006" }}</div>
+          <div style="padding-top: 0.35rem; font-size: x-large;">{{ if .Params.author }} Author: {{ .Params.author }}</div>{{end}}
+        </div>
+    </div>
+    {{ end }}
+</main>
+{{ end}}

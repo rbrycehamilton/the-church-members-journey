@@ -1,4 +1,6 @@
 baseURL = 'https://thechurchmembersjourney.com/'
 languageCode = 'en-us'
 title = 'The Church Members Journey'
-disableKinds = ["taxonomy", "taxonomyTerm"]
+[taxonomies]
+    tag = "tags"
+    category = "categories"

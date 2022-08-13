@@ -5,16 +5,6 @@
     <link>https://thechurchmembersjourney.com/categories/</link>
     <description>Recent content in Categories on The Church Members Journey</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 13 Aug 2022 16:40:58 -0400</lastBuildDate><atom:link href="https://thechurchmembersjourney.com/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Church</title>
-      <link>https://thechurchmembersjourney.com/categories/church/</link>
-      <pubDate>Sat, 13 Aug 2022 16:40:58 -0400</pubDate>
-      
-      <guid>https://thechurchmembersjourney.com/categories/church/</guid>
-      <description></description>
-    </item>
-    
+    <language>en-us</language><atom:link href="https://thechurchmembersjourney.com/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -1,9 +1,15 @@
 ---
-title: ""
-date: 2022-08-06T00:01:47-04:00
+title: Bird of the Year
+date: 2022-08-13T20:28:13.763Z
 draft: true
-image:
-author:
+thumbnail: uploads/background-image.png
+author: null
 tags:
-categories:
+  - Church
+image: null
+categories: Church
+share: true
 ---
+Hi Everyone!  
+
+This is a test!

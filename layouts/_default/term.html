@@ -9,6 +9,9 @@
           <div style="padding-top: 0.5rem; font-size: x-large;">{{ .Date.Format "January 2, 2006" }}</div>
           <div style="padding-top: 0.35rem; font-size: x-large;">{{ if .Params.author }} Author: {{ .Params.author }}</div>{{end}}
         </div>
+        <div style="padding-top: 1rem;">
+          <div>{{ truncate 600 .Content }}</div>
+        </div>
     </div>
     {{ end }}
  <!-- Calendly badge widget begin -->

@@ -1,2 +1,6 @@
 [context.production.environment]
 HUGO_VERSION = "0.101.0"
+
+[[redirects]]
+  from = "app.thechurchmembersjourney.com"
+  to = "app.webnertia.com"

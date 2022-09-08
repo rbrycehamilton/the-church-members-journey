@@ -13,6 +13,9 @@
         <div style="font-size: x-large;">{{ if .Params.tags }}Tags: {{range .Params.tags}}<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}" style="text-decoration: none; color: black; font-size: x-large;"><strong>{{ . }}</strong></a> {{end}}{{end}}</div>
         <div style="font-size: x-large;">{{ if .Params.categories }}Categories: {{range .Params.categories}}<a href="{{ "/categories/" | relLangURL }}{{ . | urlize }}" style="text-decoration: none; color: black; font-size: x-large;"><strong>{{ . }}</strong></a> {{end}}{{end}}</div>
       </div>
+      <div style="padding-top: 1rem;">
+        <div>{{ truncate 600 .Content }}</div>
+      </div>
     </div>
 
   {{ end }}

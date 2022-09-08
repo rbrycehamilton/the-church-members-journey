@@ -4,3 +4,4 @@ HUGO_VERSION = "0.101.0"
 [[redirects]]
   from = "/blog"
   to = "https://app.webnertia.com"
+  status = 200
